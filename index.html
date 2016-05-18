@@ -26,6 +26,9 @@
 
 		  ga('create', 'UA-77783023-1', 'auto');
 		  ga('send', 'pageview');
+		  
+		  function _gaLt(t){if(ga.hasOwnProperty("loaded")&&1==ga.loaded){for(var e=t.srcElement||t.target;e&&("undefined"==typeof e.tagName||"a"!=e.tagName.toLowerCase()||!e.href);)e=e.parentNode;if(e&&e.href){var a=e.href;if(-1==a.indexOf(location.host)&&!a.match(/^javascript\:/i)){var n=(e.target&&!e.target.match(/^_(self|parent|top)$/i)?e.target:!1,!1),o=function(){n||(n=!0,window.location.href=a)};e.target&&!e.target.match(/^_(self|parent|top)$/i)?ga("send","event","Outgoing Links",a,document.location.pathname+document.location.search):(ga("send","event","Outgoing Links",a,document.location.pathname+document.location.search,{hitCallback:o}),setTimeout(o,1e3),t.preventDefault?t.preventDefault():t.returnValue=!1)}}}}var w=window;w.addEventListener?w.addEventListener("load",function(){document.body.addEventListener("click",_gaLt,!1)},!1):w.attachEvent&&w.attachEvent("onload",function(){document.body.attachEvent("onclick",_gaLt)});
+		  
 		</script>
 	</head>
 	<body class="loading">
